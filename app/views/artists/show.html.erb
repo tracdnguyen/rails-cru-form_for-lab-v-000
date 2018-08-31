@@ -1,5 +1,5 @@
-<h3><%= %></h3>
-
+<h1><%= @artist.name %></h1>
+<p><%= @artist.bio %></p>
 <% @artists.each do |artist| %>
   <div><%= link_to artist.genre, artist_path(artist) %></div>
   <div><%= link_to artist., artist_path(artist) %></div>
