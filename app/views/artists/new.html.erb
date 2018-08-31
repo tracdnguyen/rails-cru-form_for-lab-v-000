@@ -1,4 +1,5 @@
 <%= form_for (@artist) do |a| %>
-  <%= f.text_field :name %><br>
-  <%= f.text_area :bio %><br>
+  <%= a.text_field :name %><br>
+  <%= a.text_area :bio %><br>
+  <%= a.submit %>
 <% end %>
