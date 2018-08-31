@@ -1,30 +1,30 @@
 class ArtistsController < ApplicationController
   def index
-    
+
   end
-  
+
   def show
-    @student = Student.find(params[:id])
+    @artist = Artist.find(params[:id])
   end
 
   def new
-    @student = Student.new
+    @artist = Artist.new
   end
 
   def edit
-    @student = Student.find(params[:id])
+    @artist = Artist.find(params[:id])
   end
 
   def create
-    @student = Student.new(params.require(:student))
-    @student.save
-    redirect_to student_path(@student)
+    @artist = Artist.new(params.require(:artist))
+    @artist.save
+    redirect_to artist_path(@artist)
   end
 
   def update
-    @student = Student.find(params[:id])
-    @student.update(params.require(:student))
-    redirect_to student_path(@student)
+    @artist = Artist.find(params[:id])
+    @artist.update(params.require(:artist))
+    redirect_to artist_path(@artist)
   end
 
 end
