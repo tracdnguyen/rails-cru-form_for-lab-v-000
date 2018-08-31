@@ -1,6 +1,6 @@
 class SongsController < ApplicationController
   def index
-    @song = Song.find(params[:id])
+
   end
 
   def show
